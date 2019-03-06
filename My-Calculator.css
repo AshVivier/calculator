@@ -1,0 +1,33 @@
+/* create the background of the calculator setting the width to 100% and the colour to whatever and attach to the body, and html tags */
+
+body, html {
+  width: 100%;
+  background-color: rgb(122, 122, 179)
+} 
+
+/* create the body of the calculator setting a class of calculator
+set a width, a height, a background colour and a magrin of 0 auto */
+ /* add shadowing
+  using box-shadow: inset {}px 0 {}px darken[or lighten?](color, num), */
+.calculator {
+  width: 250px;
+  height: 340px;
+  background-color: rgb(178, 178, 224);
+  margin: 0 auto;
+  border-top-left-radius: 80% 40px;
+  border-top-right-radius: 80% 40px;
+                  
+                    }
+
+                    #title {
+                      text-align: center;
+                      padding-top: 10px;
+                      margin-bottom: -10px;
+                      color:(rgb(61, 42, 42), 10);
+                      font-family: sans-serif
+                    }
+
+.row{
+
+}
+
