@@ -1,40 +1,45 @@
 @import "bourbon";
-
+/* choose a font style and import a link  */
 // Fonts
 @import url(https://fonts.googleapis.com/css?family=Pacifico|Open+Sans|Montserrat);
 
-// Colors
+/* // Colors
 $darkTan: #9B8F89;
 $tan: #F3EEE7;
 $grey: #969194;
 $green: #C7C7B0;
 $darkGrey: #4B4657;
-$red: #CC4E5F;
+$red: #CC4E5F; */
 
+/* create the background of the calculator setting the width to 100% and the colour to whatever and attach to the body, and html tags */
 body, html {
   width: 100%;
   background-color: $darkTan;
 }
-
+/* create the body of the calculator setting a class of calculator
+set a width, a height, a background colour and a magrin of 0 auto */
 .calculator {
   width: 250px;
   height: 335px;
   background-color: $tan;
   margin: 0 auto;
-  
+  /* set out some curved edges to the calculator 
+  using the border-top-left-radius etc and set to a {}%{}px */
   // Curved edges
   border-top-left-radius: 80%20px;
   border-top-right-radius: 80%20px;
   border-bottom-left-radius: 80%20px;
   border-bottom-right-radius: 80%20px;
-  
+  /* add shadowing
+  using box-shadow: inset {}px 0 {}px darken[or lighten?](color, num), */
   // Left and right shadows
   box-shadow: inset 5px 0 10px -5px darken($grey, 20),
               inset -5px 0 10px -5px darken($grey, 20),
               inset 0px -5px 10px -2px darken($grey, 20),
                     0 0 1px 2px darken($grey, 20),
                     0 10px 20px 0 darken($grey, 30);
-  
+  /* create a title id (p#title???) for the top of the calculator
+  align the text to the centre, give it a margin, padding, a color and a font*/
   // Title
   text-align: center;
   p#title {
@@ -43,6 +48,8 @@ body, html {
     color: darken($grey, 10);
     font-family: 'Pacifico';
   }
+  /* create a tagline for beneath the title
+  make all uppercase with text-transform, set a color, font type, and font size */
   p#tagline {
     text-transform: uppercase;
     color: $grey;
@@ -50,7 +57,8 @@ body, html {
     font-size: .7em;
   }
   
-  // Numbers input box
+  /* // create a Numbers input box the input type being text
+  Then set a background color, a border, line height, width, font size, direction, font family, right padding, margin, border radius, box-shodow: */
   input[type='text'] {
     background-color: $green;
     border: 1px solid darken($green, 10);
@@ -69,6 +77,8 @@ body, html {
   }
   
   // Buttons
+  /* create a row of buttons, display: block;
+  and for the buttons attach to button tag { width, height, border, color, font size, border radius, margins, and maybe a bit of box shadowing and background-image linear gradient} */
   .row {
     display: block;
     button {
@@ -99,6 +109,8 @@ body, html {
       }
 
     }
+    /* Make a class that does the styling for the colored buttons
+    So all the same as buttons however with diffentent colors (including borders)  */
     .ctrl {
       border: 1px solid $red;
       border-top: 2px solid lighten($red, 20);
@@ -109,6 +121,8 @@ body, html {
         @include background-image(linear-gradient(to top, $red, darken($red, 10)));
       }
     }
+    /* Make a class for the larger buttons
+    So height is twice the px of the row buttons plus the margin size */
     .tall {
       height: 65px;
       float: right;
