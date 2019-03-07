@@ -19,15 +19,20 @@ set a width, a height, a background colour and a magrin of 0 auto */
                   
                     }
 
-                    #title {
-                      text-align: center;
-                      padding-top: 10px;
-                      margin-bottom: -10px;
-                      color:(rgb(61, 42, 42), 10);
-                      font-family: sans-serif
-                    }
+#title {
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: -10px;
+  color:(rgb(61, 42, 42), 10);
+  font-family: sans-serif
+}
+
+ /* create a row of buttons, display: block;
+  and for the buttons attach to button tag { width, height, border, color, font size, border radius, margins, and maybe a bit of box shadowing and background-image linear gradient} */
 
 .row{
-
+  display: block;
+  
+button
 }
 
